@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+    }
+    plugins {
+        id 'java'
+        id 'idea'
+        id 'maven-publish'
+    }
+}
+
+rootProject.name = 'FreeMapper'
+include 'core'
+

@@ -1,0 +1,43 @@
+archivesBaseName="freemapper-core"
+version="1.0"
+publishing{
+    repositories {
+        mavenLocal()
+    }
+    publications{
+        FreeMapper(MavenPublication){
+            groupId="com.freemapper"
+            artifactId="freemapper-core"
+            version="1.0"
+            from components.java
+
+            pom {
+                name = 'FreeMapper'
+                description = 'An elasticsearch persistence framework similar to mybatis'
+                url = 'https://github.com/Yanshaoshuai/FreeMapper'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'Yanshaoshuai'
+                        name = 'shaoshuai-Yan'
+                        email = 'ahutyss@gmail.com'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/Yanshaoshuai/FreeMapper.git'
+                    developerConnection = 'scm:git:ssh:git@github.com:Yanshaoshuai/FreeMapper.git'
+                    url = 'https://github.com/Yanshaoshuai/FreeMapper'
+                }
+            }
+        }
+
+    }
+}
+jar {
+    enabled = true
+}
