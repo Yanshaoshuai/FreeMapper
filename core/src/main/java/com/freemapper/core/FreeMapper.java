@@ -26,6 +26,12 @@ public class FreeMapper {
 
     private FreeMapper() {
     }
+    public static FreeMapper getInstance(){
+        if(instance==null){
+            throw new RuntimeException("instance not init,pls call getInstance(String xmlPath, RestClient restClient, String mapperPath) before");
+        }
+        return instance;
+    }
     public static FreeMapper getInstance(String xmlPath, RestClient restClient, String mapperPath) throws IOException {
         if (instance == null) {
             synchronized (FreeMapper.class) {

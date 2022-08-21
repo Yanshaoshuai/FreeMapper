@@ -4,74 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8eada10d-8473-4910-a50f-5362c46ee278" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/checksums.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/md5-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/checksums/sha1-checksums.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/dependencies-accessors/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileChanges/last-build.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/7.4/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/FreeMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/JdkInvocation.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/XmlMethod.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/XmlReader.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/entity/byid/SearchByIdResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/entity/search/Hit.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/entity/search/Hits.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/entity/search/SearchResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/entity/search/Shards.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/entity/search/Source.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/entity/search/Total.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/parser/BaseParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/parser/CommonSearchParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/parser/SearchByIdParser.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/util/IdUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/util/ReflectUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/classes/java/main/com/freemapper/core/util/ResourceUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/libs/freemapper-core-1.0.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/build/tmp/jar/MANIFEST.MF" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/FreeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/JdkInvocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/XmlMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/XmlReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/entity/byid/SearchByIdResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/entity/search/Hit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/entity/search/Hits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/entity/search/SearchResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/entity/search/Shards.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/entity/search/Source.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/entity/search/Total.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/parser/BaseParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/parser/CommonSearchParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/parser/SearchByIdParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/util/IdUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/util/ReflectUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/util/ResourceUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+    <list default="true" id="8eada10d-8473-4910-a50f-5362c46ee278" name="Changes" comment="migrate FreeMapper from https://github.com/Yanshaoshuai/JAVA_DEMO as an independent project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/FreeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/freemapper/core/FreeMapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -291,8 +226,16 @@
       <updated>1660992278928</updated>
       <workItem from="1660992283559" duration="1161000" />
       <workItem from="1660993456149" duration="118000" />
-      <workItem from="1660993581889" duration="2410000" />
+      <workItem from="1660993581889" duration="4222000" />
     </task>
+    <task id="LOCAL-00001" summary="migrate FreeMapper from https://github.com/Yanshaoshuai/JAVA_DEMO as an independent project">
+      <created>1660996196077</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660996196077</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,6 +253,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="migrate FreeMapper from https://github.com/Yanshaoshuai/JAVA_DEMO as an independent project" />
+    <option name="LAST_COMMIT_MESSAGE" value="migrate FreeMapper from https://github.com/Yanshaoshuai/JAVA_DEMO as an independent project" />
   </component>
 </project>
