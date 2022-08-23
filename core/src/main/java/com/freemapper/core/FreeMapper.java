@@ -64,6 +64,10 @@ public class FreeMapper {
         return mapperInstanceMap;
     }
 
+    public <T> T getMapperInstance(Class<T> clazz){
+        return (T) mapperInstanceMap.get(clazz.getSimpleName());
+    }
+
     public RestClient getRestClient() {
         return restClient;
     }
