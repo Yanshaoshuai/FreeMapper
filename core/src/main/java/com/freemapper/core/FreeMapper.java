@@ -26,12 +26,26 @@ public class FreeMapper {
 
     private FreeMapper() {
     }
+
+    /**
+     * 获取已存在的FreeMapper单例对象
+     * @return
+     */
     public static FreeMapper getInstance(){
         if(instance==null){
             throw new RuntimeException("instance not init,pls call getInstance(String xmlPath, RestClient restClient, String mapperPath) before");
         }
         return instance;
     }
+
+    /**
+     * 初始化FreeMapper单例对象
+     * @param xmlPath
+     * @param restClient
+     * @param mapperPath
+     * @return
+     * @throws IOException
+     */
     public static FreeMapper getInstance(String xmlPath, RestClient restClient, String mapperPath) throws IOException {
         if (instance == null) {
             synchronized (FreeMapper.class) {
@@ -60,14 +74,28 @@ public class FreeMapper {
         return instance;
     }
 
+    /**
+     * 获取代理Mapper实例Map集合
+     * @return
+     */
     public Map<String, Object> getMapperInstanceMap() {
         return mapperInstanceMap;
     }
 
+    /**
+     * 获取特定代理Mapper实例
+     * @param clazz
+     * @return
+     * @param <T>
+     */
     public <T> T getMapperInstance(Class<T> clazz){
         return (T) mapperInstanceMap.get(clazz.getSimpleName());
     }
 
+    /**
+     * 获取ElasticSearch RestClient
+     * @return
+     */
     public RestClient getRestClient() {
         return restClient;
     }
@@ -76,6 +104,10 @@ public class FreeMapper {
         this.restClient = restClient;
     }
 
+    /**
+     * 获取解析器实例map集合
+     * @return
+     */
     public Map<String, BaseParser> getParserMap() {
         return parserMap;
     }
