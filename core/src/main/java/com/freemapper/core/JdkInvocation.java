@@ -21,17 +21,28 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 动态代理类
+ * 提供根据接口和xml文件信息生成动态代理类的功能
+ */
 public class JdkInvocation implements InvocationHandler {
     private XmlReader xmlReader;
     private RestClient restClient;
     private Map<String, BaseParser> parserMap;
 
+    /**
+     * 动态代理类初始化方法
+     * @param xmlReader
+     * @param restClient
+     * @param parserMap
+     */
     public JdkInvocation(XmlReader xmlReader, RestClient restClient,Map<String, BaseParser> parserMap) {
         super();
         this.xmlReader = xmlReader;
         this.restClient = restClient;
         this.parserMap=parserMap;
     }
+
 
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws TemplateException, IOException, ClassNotFoundException {
@@ -45,6 +56,12 @@ public class JdkInvocation implements InvocationHandler {
         return null;
     }
 
+    /**
+     * 构建模板参数
+     * @param method
+     * @param args
+     * @return
+     */
     private static Map<String, Object> buildParam(Method method, Object[] args) {
         Parameter[] parameters = method.getParameters();
         HashMap<String, Object> params = new HashMap<>();
@@ -55,6 +72,14 @@ public class JdkInvocation implements InvocationHandler {
         return params;
     }
 
+    /**
+     * 获取渲染后的dsl
+     * @param methodId
+     * @param param
+     * @return
+     * @throws IOException
+     * @throws TemplateException
+     */
     public String getResultDsl(String methodId, Object param) throws IOException, TemplateException {
         Configuration fmCfg = xmlReader.getCfg();
         Template template = fmCfg.getTemplate(methodId);
@@ -65,7 +90,17 @@ public class JdkInvocation implements InvocationHandler {
         return resultDsl;
     }
 
-    //todo ResultParser -- Upsert Delete  Aggregation Page
+    /**
+     * 使用模板和参数调用ElasticSearch RestClient,并解析返回结果
+     * @param xmlMethod
+     * @param params
+     * @param method
+     * @return
+     * @throws IOException
+     * @throws TemplateException
+     * @throws ClassNotFoundException
+     * todo ResultParser -- Upsert Delete  Aggregation Page
+     */
     private Object execute(XmlMethod xmlMethod, Map<String, Object> params, Method method) throws IOException, TemplateException, ClassNotFoundException {
         Request request;
         if (StringUtils.isNotEmpty(xmlMethod.getUrl())) {
