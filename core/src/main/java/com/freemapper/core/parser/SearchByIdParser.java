@@ -15,8 +15,7 @@ public class SearchByIdParser implements BaseParser{
             //返回 SearchByIdResult
             ObjectMapper mapper = new ObjectMapper();
             JavaType javaType = mapper.getTypeFactory().constructType(method.getGenericReturnType());
-            JavaType searchByIdResult = mapper.readValue(json, javaType);
-            return (T) searchByIdResult;
+            return (T) mapper.readValue(json, javaType);
         }else{
             //返回pojo
             ObjectMapper mapper = new ObjectMapper();

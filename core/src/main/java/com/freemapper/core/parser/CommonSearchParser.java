@@ -30,8 +30,7 @@ public class CommonSearchParser implements BaseParser{
             //返回SearchResult
             ObjectMapper mapper = new ObjectMapper();
             JavaType javaType = mapper.getTypeFactory().constructType(method.getGenericReturnType());
-            JavaType searchResult = mapper.readValue(json, javaType);
-            return (T) searchResult;
+            return (T) mapper.readValue(json, javaType);
         }
         throw new RuntimeException(String.format("parser can't parse this result:\n%s",json));
     }
