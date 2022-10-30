@@ -1,2 +1,5 @@
-/core/build/
+core/build/
 /.idea/
+.gradle/
+.idea/
+build/
