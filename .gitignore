@@ -1,5 +1,4 @@
 core/build/
 /.idea/
-.gradle/
+.gradle
 .idea/
-build/
